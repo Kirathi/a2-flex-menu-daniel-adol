@@ -1,43 +1,54 @@
-/*@TODO (6) : Specify what each selector and property-value pair does and means*/
 
-html {
-  box-sizing: border-box;
+html {                                       /* selects  html id*/
+  box-sizing: border-box;                    /* includes padding and border in width and height */
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+*, *:before, *:after {                       /* selects everything before and after the information*/
+  box-sizing: inherit;                       /* inherits border-box property from the parent html attribute*/
 }
-body {
-  font-family: Georgia, serif;
-  line-height: 1.5em;
+body {                                       /* selects body tag*/
+  display: flex;                             /* sets the body to flexible with the flex property */
+  font-family: Georgia, serif;               /* sets the font of the body to font family Serif - Georgia*/
+  line-height: 1.5em;                        /* sets the line height to 1.5 times the size of current text */
+  justify-content: center;                   /* aligns ites at tje center of the body container */
 }
-h1 {
-  font-size: 4em;
+h1 {                                         /* selects the elements of h1 tag */
+  font-size: 4em;                            /* sets the font-size to 4 times the size of current text */
   font-weight: normal;
 }
-h2 {
-  font-size: 1.2em;
-  margin-top: 0;
+h2 {                                         /* selects the elements of h2 id */
+  font-size: 1.2em;                          /* sets the font-size to 1.2 times the size of the current text */
+  margin: 0;                                 /* sets the margin to 0 */
 }
-#menu {
-  border: 3px solid #783F27;
-
+.pic {                                       /* selects the pic class */
+  width:200px;                               /* sets the width to 200px */
 }
-section {
-  background: #F6F3ED;
-  margin: 10px;
-  padding: 20px;
-  border: 1px dotted maroon;
-  width: 255px;
+#menu {                                       /* selects the menu id */
+  border: 3px solid #783F27;                  /* sets the border thickness to 3px solid color */
+  width:700px;                                /* sets the width of menu to 700px */
+  display: flex;                              /* sets the menu to flexible with the flex property */
+  flex-direction: column;                     /* sets the menu elements to arranged vertically */
+  align-items: center;                        /* sets the menu to align at the center */
+  flex-grow: 1;
 }
-.title {
-  background-color: #783F27;
-  color: #F9AB33;
-  line-height: 4em;
+section {                                     /* selects the section of the document */
+  background: #F6F3ED;                        /* sets the section background color */
+  margin: 10px;                               /* sets the margin to 10px */
+  padding: 20px;                              /* sets the padding to 10px */
+  border: 0.5px dotted maroon;                /* sets the border thickness to 0.5px as a dotted maroon color */
+  width: 750px;                               /* sets the width to 750px */
+  display: flex;                              /* sets the flexibility to flex */
+  flex-direction: column;                     /* sets the flex direction to vertical */
+  align-items: center;                        /* aligns section elements to the center */
 }
-.price {
-  font-weight: bold;
-  background: #F9AB33;
-  padding: 5px;
-  width: 100%;
-  text-align: center;
+.title {                                      /* selects the class title */
+  background-color: #783F27;                  /* sets the title background color */
+  color: #F9AB33;                             /* sets the title class text color */
+  line-height: 4em;                           /* sets the title line height to 4 times the current size */
+}
+.price {                                      /* selects the price class */
+  font-weight: bold;                          /* sets the price class font weight to bold */
+  background: #F9AB33;                        /* sets the price class backround color */
+  padding: 5px;                               /*sets the price padding to 5px */
+  width: 100%;                                /* sets the price class width to 100% size of the container  */
+  text-align: center;                         /* aligns text at the center of the container */
 }
